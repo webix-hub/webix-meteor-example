@@ -6,10 +6,10 @@ Beware that this is not a final solution
 ### Currently implemented
 
 - data syncing
+- templating
 
 
 ### Not implemented yet
 
-- templating
 - rouiting
 - ui|code organization

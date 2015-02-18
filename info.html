@@ -1,0 +1,18 @@
+<template name="info">
+	<blockquote>
+		<h4>Book info</h4>
+		<li>Name: {{name}}</li>
+		<li>Author: {{author}}</li>
+	</blockquote>
+</template>
+
+<template name="allinfo">
+	<blockquote>
+		<h3>All books</h3>
+		{{#each books}}
+			<h4>Book info</h4>
+			<li>Name: {{name}}</li>
+			<li>Author: {{author}}</li>
+		{{/each}}
+	</blockquote>
+</template>
