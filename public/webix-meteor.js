@@ -150,6 +150,7 @@ webix.protoUI({
 	name:"reactive",
 	$init:function(){
 		this.$ready.push(this.render);
+		this.$view.className += " webix_selectable";
 	},
 	render:function(){
 		this.$view.innerHTML="";
