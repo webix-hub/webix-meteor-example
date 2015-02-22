@@ -144,3 +144,22 @@ webix.attachEvent("onSyncUnknown", function(target, source){
 		target.sync(data);
 	}
 });
+
+
+webix.protoUI({
+	name:"reactive",
+	$init:function(){
+		this.$ready.push(this.render);
+	},
+	render:function(){
+		this.$view.innerHTML="";
+		if (this.config.data)
+			UI.renderWithData(Template[this.config.template], this.config.data, this.$view);
+		else
+			UI.render(Template[this.config.template], this.$view);
+	},
+	setValue:function(data){
+		this.config.data = data;
+		this.render();
+	}
+}, webix.ui.view, webix.BaseBind);
