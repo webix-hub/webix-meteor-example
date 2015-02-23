@@ -8,6 +8,10 @@ Router.route("/datatable", function(){
 	this.render("Datatable");
 });
 
+Router.route("/dataloading", function(){
+	this.render("DataLoading");
+});
+
 Router.route("/fullscreen", function(){
 	this.render("FullScreen");
 });
