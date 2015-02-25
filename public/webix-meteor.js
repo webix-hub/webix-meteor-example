@@ -150,7 +150,8 @@ webix.protoUI({
 	name:"reactive",
 	$init:function(){
 		this.$ready.push(this.render);
-		this.$view.className += " webix_selectable";
+		this.$view.className += " webix_selectable ";
+		this.$view.style.overflow = "auto";
 	},
 	render:function(){
 		this.$view.innerHTML="";

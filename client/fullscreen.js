@@ -43,7 +43,10 @@ if (Meteor.isClient){
 				},
 				{ header:"Meteor Data Binding", body:{
 					id:"t2", view:"reactive", template: "allinfo" }
-				}
+				},
+				{ header:"Content with Scroll", body:{
+					id:"t2", view:"reactive", template: "longinfo" }
+				},
 			]
 		};
 
